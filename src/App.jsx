@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import AppClima from "./Components/AppClima"
+import { ClimaProvider } from "./Context/ClimaProvider"
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-    
-    </>
+    <ClimaProvider>
+      <header>
+        <h1>Buscador de clima</h1>
+      </header>
+      <AppClima />
+    </ClimaProvider>
   )
 }
 
